@@ -70,7 +70,7 @@
                               <li><a class="dropdown-item" href="standard.html">Standard+</a></li>
                               <li><a class="dropdown-item" href="standard.html">Luxo</a></li>
                               <li><a class="dropdown-item" href="standard.html">Luxo+</a></li>
-                              <li><a class="dropdown-item" href="standard.html">Advanced</a></li>
+                              <li><a class="dropdown-item" href="standard.html">Superior</a></li>
                             </ul>
                           </li>
                         <li><a href="lua-de-mel.html">Lua de mel</a></li>
@@ -88,17 +88,15 @@
       </div>
     </header>
     <!-- END head -->
-<script>$('.dropdown-submenu > a').on("click", function(e) {
-  var submenu = $(this);
-  $('.dropdown-submenu .dropdown-menu').removeClass('show');
-  submenu.next('.dropdown-menu').addClass('show');
-  e.stopPropagation();
-});
-
-$('.dropdown').on("hidden.bs.dropdown", function() {
-  // hide any open menus when parent closes
-  $('.dropdown-menu.show').removeClass('show');
-});</script>
+    <script>
+      $(document).ready(function(){
+        $('.dropdown-submenu a.test').on("click", function(e){
+          $(this).next('ul').toggle();
+          e.stopPropagation();
+          e.preventDefault();
+        });
+      });
+      </script>
     <section class="site-hero overlay" style="background-image: url(images/background-main.png)" data-stellar-background-ratio="0.5">
       <div class="container">
         <div class="row site-hero-inner justify-content-center align-items-center">
@@ -156,7 +154,7 @@ $('.dropdown').on("hidden.bs.dropdown", function() {
               </figure>
               <div class="p-3 text-center room-info">
                 <h2 style="font-family: Montserrat, sans-serif;">Standard</h2>
-                <span class="text-uppercase letter-spacing-1">1000$ / por noite</span>
+                
               </div>
             </a>
           </div>
@@ -168,7 +166,7 @@ $('.dropdown').on("hidden.bs.dropdown", function() {
               </figure>
               <div class="p-3 text-center room-info">
                 <h2 style="font-family: Montserrat, sans-serif;">Standard +</h2>
-                <span class="text-uppercase letter-spacing-1">1000$ / por noite</span>
+                
               </div>
             </a>
           </div>
@@ -179,7 +177,7 @@ $('.dropdown').on("hidden.bs.dropdown", function() {
               </figure>
               <div class="p-3 text-center room-info">
                 <h2 style="font-family: Montserrat, sans-serif;">Luxo</h2>
-                <span class="text-uppercase letter-spacing-1">1000$ / por noite</span>
+                
               </div>
             </a>
           </div>
@@ -192,7 +190,7 @@ $('.dropdown').on("hidden.bs.dropdown", function() {
               </figure>
               <div class="p-3 text-center room-info">
                 <h2 style="font-family: Montserrat, sans-serif;">Luxo +</h2>
-                <span class="text-uppercase letter-spacing-1">1000$ / por noite</span>
+                
               </div>
             </a>
           </div>
@@ -203,8 +201,8 @@ $('.dropdown').on("hidden.bs.dropdown", function() {
                 <img src="images/royal.jpg" alt="Free website template" class="img-fluid mb-3">
               </figure>
               <div class="p-3 text-center room-info">
-                <h2 style="font-family: Montserrat, sans-serif;">Advanced</h2>
-                <span class="text-uppercase letter-spacing-1">1000$ / por noite</span>
+                <h2 style="font-family: Montserrat, sans-serif;">Superior</h2>
+                
               </div>
             </a>
           </div>
@@ -258,141 +256,10 @@ $('.dropdown').on("hidden.bs.dropdown", function() {
     </section>
 
     
-    <!-- END section -->
-    <section class="section testimonial-section">
-      <div class="container">
-        <div class="row justify-content-center text-center mb-5">
-          <div class="col-md-7">
-            <h2 class="heading" data-aos="fade-up">People Says</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="js-carousel-2 owl-carousel mb-5" data-aos="fade-up" data-aos-delay="200">
-            
-            <div class="testimonial text-center slider-item">
-              <h2>&ldquo;Pousada encantadora&rdquo;</h2>
-              <blockquote>
-
-                <p>&ldquo;
-                  Pousada maravilhosa!! Passei dias muito gostosos lá com minha família!!! Atendimento impecável, funcionários educados e prestativos!!! Quarto super confortável, com roupas de banho e de cama de primeira qualidade!!! Sem contar a simpatia e prontidão da dona da pousada que está sempre por ali pronta para nos atender!!! Voltarei em breve, com certeza!!!!&rdquo;</p>
-              </blockquote>
-              <!-- <p><em>&mdash; Jean Smith</em></p> -->
-            </div> 
-
-            <div class="testimonial text-center slider-item">
-              <!-- <div class="author-image mb-3">
-                <img src="images/person_2.jpg" alt="Image placeholder" class="rounded-circle mx-auto">
-              </div> -->
-              <blockquote>
-                <p>&ldquo;Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.&rdquo;</p>
-              </blockquote>
-              <!-- <p><em>&mdash; John Doe</em></p> -->
-            </div>
-
-            <div class="testimonial text-center slider-item">
-              <div class="author-image mb-3">
-                <img src="images/person_3.jpg" alt="Image placeholder" class="rounded-circle mx-auto">
-              </div>
-              <blockquote>
-
-                <p>&ldquo;When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane.&rdquo;</p>
-              </blockquote>
-              <p><em>&mdash; John Doe</em></p>
-            </div>
-
-
-            <div class="testimonial text-center slider-item">
-              <div class="author-image mb-3">
-                <img src="images/person_1.jpg" alt="Image placeholder" class="rounded-circle mx-auto">
-              </div>
-              <blockquote>
-
-                <p>&ldquo;A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.&rdquo;</p>
-              </blockquote>
-              <p><em>&mdash; Jean Smith</em></p>
-            </div> 
-
-            <div class="testimonial text-center slider-item">
-              <div class="author-image mb-3">
-                <img src="images/person_2.jpg" alt="Image placeholder" class="rounded-circle mx-auto">
-              </div>
-              <blockquote>
-                <p>&ldquo;Nota 10 em tudo, café da manhã, recepção, limpeza, organização etc… atendentes simpáticos. Volto com certeza!!! Contato com natureza surreal!!!! Lugar romântico ❤️❤️❤️ Decoração fabulosa com os mínimos detalhes!!! Simplesmente AMEII&rdquo;</p>
-              </blockquote>
-              <p><em>&mdash; John Doe</em></p>
-            </div>
-
-            <div class="testimonial text-center slider-item">
-              <div class="author-image mb-3">
-                <img src="images/person_3.jpg" alt="Image placeholder" class="rounded-circle mx-auto">
-              </div>
-              <blockquote>
-
-                <p>&ldquo;When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane.&rdquo;</p>
-              </blockquote>
-              <p><em>&mdash; John Doe</em></p>
-            </div>
-
-          </div>
-            <!-- END slider -->
-        </div>
-
-      </div>
-    </section>
+ 
     
 
-    <!-- <section class="section blog-post-entry bg-light">
-      <div class="container">
-        <div class="row justify-content-center text-center mb-5">
-          <div class="col-md-7">
-            <h2 class="heading" data-aos="fade-up">Events</h2>
-            <p data-aos="fade-up">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-4 col-md-6 col-sm-6 col-12 post" data-aos="fade-up" data-aos-delay="100">
-
-            <div class="media media-custom d-block mb-4 h-100">
-              <a href="#" class="mb-4 d-block"><img src="images/img_1.jpg" alt="Image placeholder" class="img-fluid"></a>
-              <div class="media-body">
-                <span class="meta-post">February 26, 2018</span>
-                <h2 class="mt-0 mb-3"><a href="#">Travel Hacks to Make Your Flight More Comfortable</a></h2>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-              </div>
-            </div>
-            <div class="media media-custom d-block mb-4 h-100">
-              <a href="#" class="mb-4 d-block"><img src="images/img_1.jpg" alt="Image placeholder" class="img-fluid"></a>
-              <div class="media-body">
-                <span class="meta-post">February 26, 2018</span>
-                <h2 class="mt-0 mb-3"><a href="#">Travel Hacks to Make Your Flight More Comfortable</a></h2>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-              </div>
-            </div>
-
-          </div>
-          <div class="col-lg-4 col-md-6 col-sm-6 col-12 post" data-aos="fade-up" data-aos-delay="200">
-            <div class="media media-custom d-block mb-4 h-100">
-              <a href="#" class="mb-4 d-block"><img src="images/img_2.jpg" alt="Image placeholder" class="img-fluid"></a>
-              <div class="media-body">
-                <span class="meta-post">February 26, 2018</span>
-                <h2 class="mt-0 mb-3"><a href="#">5 Job Types That Aallow You To Earn As You Travel The World</a></h2>
-                <p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 col-sm-6 col-12 post" data-aos="fade-up" data-aos-delay="300">
-            <div class="media media-custom d-block mb-4 h-100">
-              <a href="#" class="mb-4 d-block"><img src="images/img_3.jpg" alt="Image placeholder" class="img-fluid"></a>
-              <div class="media-body">
-                <span class="meta-post">February 26, 2018</span>
-                <h2 class="mt-0 mb-3"><a href="#">30 Great Ideas On Gifts For Travelers</a></h2>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. t is a paradisematic country, in which roasted parts of sentences.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
+    
 
     <section class="section bg-image overlay" style="background-image: url('images/hero_4.jpg');">
         <div class="container" >
