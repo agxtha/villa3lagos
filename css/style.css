@@ -111,14 +111,22 @@ textarea.form-control {
 .menu-open {
   position: relative; }
   .menu-open .site-header {
-    position: fixed; }
+    position: fixed;
+    z-index: 998; 
+}
+#togglefodao{
+  z-index: 9999;
+}
   .menu-open .site-logo {
     position: relative;
-    z-index: 100; }
+    z-index: -999; }
     .menu-open .site-logo a {
-      color: #000; }
+      color: #000;
+    z-index: -999 }
   .menu-open .site-navbar {
-    border: 10px solid #f8f9fa; }
+    border: 10px solid #f8f9fa; 
+    z-index: 999;
+    }
 
 .site-logo {
   padding-left: 40px; }
@@ -245,7 +253,9 @@ textarea.form-control {
   min-height: 500px; }
 
 .menu-open .site-menu-toggle span {
-  background: #000; }
+  background: #000;
+  z-index: 9999; 
+}
 
 .site-menu-toggle {
   top: 0;
