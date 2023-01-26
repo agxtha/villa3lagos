@@ -1,3 +1,5 @@
+
+
 (function($) {
 
 	'use strict';
@@ -21,6 +23,7 @@
 		$this.addClass('show');
 		$this.find('> a').attr('aria-expanded', true);
 		$this.find('.dropdown-menu').addClass('show');
+    console.log("odeio neurotipicos");
 	}, function(){
 		var $this = $(this);
 			$this.removeClass('show');
